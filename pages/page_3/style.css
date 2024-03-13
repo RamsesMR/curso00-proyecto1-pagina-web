@@ -1,0 +1,213 @@
+html {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+body{
+ 
+	
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	color: white;
+
+	display: grid;
+	grid-template-rows: 0.3fr 0.1fr 1fr 0.3fr;
+	grid-template-columns: 100%;
+	grid-template-areas: 
+		"header"
+		"nav"
+		"main"
+		"footer";
+}
+
+
+main {
+	display: grid;
+    margin: 0;
+    padding: 0;
+	grid-template-rows: 100%;
+	grid-template-columns: 100%;
+	grid-template-areas:
+		"section1"
+
+		
+	;
+}
+
+section {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 100%;
+	grid-template-areas: 
+		"art1"
+		"art2"
+
+	;
+}
+
+article{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.art1 {
+	display: grid;
+	grid-area: art1;
+    border: blue groove 1px;
+}
+
+.art2 {
+	display: grid;
+	grid-area: art2;
+}
+/*
+.art3 {
+	display: grid;
+	grid-area: art3;
+}
+
+ .art4 {
+	display: grid;
+	grid-area: art4;
+}
+
+.art5 {
+	display: grid;
+	grid-area: art5;
+}
+
+.art6 {
+	display: grid;
+	grid-area: art6;
+}
+
+.art7 {
+	display: grid;
+	grid-area: art7;
+} */
+
+.nav{
+    display: grid;
+    grid-area: nav;
+    border: white solid 1px;
+}
+.header{
+    display: grid;
+    grid-area: header;
+    border: white solid 1px;
+}
+.main{
+    display: grid;
+    grid-area: main;
+    border: white solid 1px;
+}
+.footer{
+    display: grid;
+    grid-area:footer;
+    border: white solid 1px;
+}
+
+.section1 {
+
+	display: grid;
+	grid-area: section1;
+	border-right: black 1px solid;
+}
+/* .section2 {
+
+	display: grid;
+	grid-area: section2;
+	border-right: black 1px solid;
+}
+.section3 {
+	display: grid;
+	grid-area: section3;
+	border-right: black 1px solid; 
+}
+
+.section4 {
+	display: grid;
+	grid-area: section4;
+	border-right: black 1px solid;
+}
+.section5 {
+	display: grid;
+	grid-area: section5;
+	border-right: black 1px solid;
+}*/ 
+nav{
+    background-color: gray;
+    color: white;
+}
+
+
+nav ul {
+	display: flex;
+	justify-content:space-around ;
+	height: 100%;
+    width: 100%;
+
+	
+}
+
+nav li{
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+
+nav ul li a{
+	display: flex;
+    color: white;
+	font-size: 18px;
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	
+
+}
+
+nav ul li a:hover{
+
+	background-color: brown;
+	color: black;
+	border: black solid 3px;
+    cursor: pointer;
+	transition: all 1s;
+}
+
+header{
+
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    border: solid white 1px;
+ 
+}
+header hgroup{
+    display: flex;
+    flex-direction: row;
+}
+header hgroup div{
+    display: flex;
+}
+
+footer{
+
+    background-color: black;
+    color: white;
+}
+
+
+/*----------------DE AQUI PARA ABAJO PUEDEN HACER NUEVO CODIGO CSS PARA SUS ESTILOS PROPIOS--------------*/
