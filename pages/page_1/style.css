@@ -1,71 +1,67 @@
 html {
-    background-color: black;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+	background-color: black;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	box-sizing: content-box;
 }
-body{
- 
-	
+
+body {
+	margin: 0;
 	width: 100%;
 	height: 100%;
 	background-color: black;
 	color: white;
-
 	display: grid;
-	grid-template-rows: 0.3fr 0.1fr 1fr 0.3fr;
+	grid-template-rows: 0.2fr 0.1fr 5.7fr 0.2fr;
 	grid-template-columns: 100%;
-	grid-template-areas: 
+	grid-template-areas:
 		"header"
 		"nav"
 		"main"
 		"footer";
 }
 
-
 main {
+	background-color: rgb(87, 86, 86);
 	display: grid;
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 	grid-template-rows: 100%;
 	grid-template-columns: 100%;
-	grid-template-areas:
-		"section1"
-
-		
-	;
+	grid-template-areas: "section1";
 }
 
 section {
 	display: grid;
-	grid-template-rows: 1fr 1fr;
-	grid-template-columns: 100%;
+	grid-template-rows: 100%;
+	grid-template-columns: 50% 50%;
 	grid-template-areas: 
-		"art1"
-		"art2"
-
-	;
+	"art1 art2";
 }
 
-article{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    width: 100%;
+article {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	height: 100%;
 }
 
 .art1 {
 	display: grid;
 	grid-area: art1;
-    border: blue groove 1px;
+	
 }
 
 .art2 {
 	display: grid;
 	grid-area: art2;
 }
+
 /*
 .art3 {
 	display: grid;
@@ -92,33 +88,33 @@ article{
 	grid-area: art7;
 } */
 
-.nav{
-    display: grid;
-    grid-area: nav;
-    border: white solid 1px;
+.nav {
+	display: grid;
+	grid-area: nav;
+	border: solid 1px white;
 }
-.header{
-    display: grid;
-    grid-area: header;
-    border: white solid 1px;
+
+.header {
+	display: grid;
+	grid-area: header;
 }
-.main{
-    display: grid;
-    grid-area: main;
-    border: white solid 1px;
+
+.main {
+	display: grid;
+	grid-area: main;
 }
-.footer{
-    display: grid;
-    grid-area:footer;
-    border: white solid 1px;
+
+.footer {
+	display: grid;
+	grid-area: footer;
 }
 
 .section1 {
-
 	display: grid;
 	grid-area: section1;
 	border-right: black 1px solid;
 }
+
 /* .section2 {
 
 	display: grid;
@@ -140,23 +136,23 @@ article{
 	display: grid;
 	grid-area: section5;
 	border-right: black 1px solid;
-}*/ 
-nav{
-    background-color: gray;
-    color: white;
+}*/
+nav {
+	background: linear-gradient(rgb(88, 88, 88), rgb(88, 88, 88), black);
+	color: white;
 }
-
 
 nav ul {
 	display: flex;
-	justify-content:space-around ;
+	justify-content: space-around;
 	height: 100%;
-    width: 100%;
-
-	
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	height: 50px;
 }
 
-nav li{
+nav li {
 	list-style-type: none;
 	display: flex;
 	align-items: center;
@@ -164,50 +160,196 @@ nav li{
 	width: 100%;
 }
 
-
-nav ul li a{
+nav ul li a {
 	display: flex;
-    color: white;
+	color: white;
 	font-size: 18px;
 	text-decoration: none;
 	width: 100%;
 	height: 100%;
 	align-items: center;
 	justify-content: center;
-	
-
 }
 
-nav ul li a:hover{
-
-	background-color: brown;
+.a-1:hover {
+	background-color: #ffe433;
 	color: black;
 	border: black solid 3px;
-    cursor: pointer;
+	cursor: pointer;
 	transition: all 1s;
 }
 
-header{
-
-    display: flex;
-    flex-direction: row;
-    background-color: black;
-    border: solid white 1px;
- 
-}
-header hgroup{
-    display: flex;
-    flex-direction: row;
-}
-header hgroup div{
-    display: flex;
+.a-2:hover {
+	background-color: rgb(255, 93, 43);
+	color: black;
+	border: black solid 3px;
+	cursor: pointer;
+	transition: all 1s;
 }
 
-footer{
-
-    background-color: black;
-    color: white;
+.a-3:hover {
+	background-color: rgb(98, 111, 232);
+	color: black;
+	border: black solid 3px;
+	cursor: pointer;
+	transition: all 1s;
 }
 
+header {
+	display: flex;
+	width: 100%;
+	left: 0;
+	right: 0;
+	padding: 7px;
+	flex-direction: row;
+	background: linear-gradient(black, rgb(88, 88, 88));
+	color: white;
+}
+
+header hgroup {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 100%;
+	grid-template-areas: "h-img h-title h-botton";
+}
+
+header hgroup div button {
+	width: 80%;
+	height: 50px;
+}
+
+header div img {
+	width: 400px;
+	height: 150px;
+}
+
+.h-img {
+	display: grid;
+	grid-area: h-img;
+}
+
+.h-title {
+	display: grid;
+	grid-area: h-title;
+	text-align: center;
+}
+
+.h-botton {
+	display: grid;
+	grid-area: h-botton;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+header hgroup div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+footer {
+	background-color: black;
+	color: white;
+	display: grid;
+	padding: 7px;
+	grid-template-rows: 100%;
+	grid-template-columns: 0.6fr 1fr 0.8fr;
+	grid-template-areas: "f-div1 f-div2 f-div3";
+	bottom: 0;
+}
+
+footer div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer .f-div1 {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+footer .f-div2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+footer .f-div3 {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+footer div img {
+	width: 250px;
+	height: 70px;
+}
+
+.f-div1 {
+	display: grid;
+	grid-area: f-div1;
+}
+
+.f-div2 {
+	display: grid;
+	grid-area: f-div2;
+	text-align: center;
+}
+
+.f-div3 {
+	display: grid;
+	grid-area: f-div3;
+}
 
 /*----------------DE AQUI PARA ABAJO PUEDEN HACER NUEVO CODIGO CSS PARA SUS ESTILOS PROPIOS--------------*/
+
+.contenedor {
+	text-align: center;
+}
+
+.izq_text {
+	
+	float: left;
+
+	/* background-color: rgb(34, 160, 118); */
+	color: white;
+	width: 350px;
+	font-family: Stencil Std, fantasy;
+}
+
+.der_video {
+	
+	float: right;
+	color: white;
+	font-family: Jazz LET, fantasy;
+}
+
+.der_video iframe {
+	border: 10px rgb(73, 73, 109) solid;
+}
+
+.cen_img {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: inline-block;
+	color: white;
+}
+
+a:hover{
+    background-color: brown;
+    color: yellow;
+    transition:2s all;
+}

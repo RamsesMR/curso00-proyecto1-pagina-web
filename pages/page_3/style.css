@@ -5,16 +5,16 @@ html {
     width: 100%;
     height: 100%;
 }
+
 body{
  
-	
+	margin: 0;
 	width: 100%;
 	height: 100%;
 	background-color: black;
 	color: white;
-
 	display: grid;
-	grid-template-rows: 0.3fr 0.1fr 1fr 0.3fr;
+	grid-template-rows: 0.2fr 0.1fr 5.8fr 0.2fr;
 	grid-template-columns: 100%;
 	grid-template-areas: 
 		"header"
@@ -25,6 +25,8 @@ body{
 
 
 main {
+	width: 100%;
+	height: 100%;
 	display: grid;
     margin: 0;
     padding: 0;
@@ -39,17 +41,22 @@ main {
 
 section {
 	display: grid;
-	grid-template-rows: 1fr 1fr;
-	grid-template-columns: 100%;
+	width: 100%;
+	height: auto;
+	grid-template-rows: 100%;
+	grid-template-columns: 50% 50%;
 	grid-template-areas: 
-		"art1"
-		"art2"
-
+		"art1 art2"
 	;
 }
 
 article{
     display: flex;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0
+	;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -59,7 +66,7 @@ article{
 .art1 {
 	display: grid;
 	grid-area: art1;
-    border: blue groove 1px;
+  
 }
 
 .art2 {
@@ -95,22 +102,24 @@ article{
 .nav{
     display: grid;
     grid-area: nav;
-    border: white solid 1px;
+    border: solid 1px white;
 }
 .header{
     display: grid;
     grid-area: header;
-    border: white solid 1px;
+  
 }
 .main{
     display: grid;
     grid-area: main;
-    border: white solid 1px;
+	padding-bottom: 3rem;
+	
+  
 }
 .footer{
     display: grid;
     grid-area:footer;
-    border: white solid 1px;
+
 }
 
 .section1 {
@@ -142,7 +151,7 @@ article{
 	border-right: black 1px solid;
 }*/ 
 nav{
-    background-color: gray;
+    background:linear-gradient(rgb(88, 88, 88),rgb(88, 88, 88),black);
     color: white;
 }
 
@@ -152,6 +161,9 @@ nav ul {
 	justify-content:space-around ;
 	height: 100%;
     width: 100%;
+	padding: 0;
+	margin: 0;
+	height: 50px;
 
 	
 }
@@ -178,9 +190,25 @@ nav ul li a{
 
 }
 
-nav ul li a:hover{
+.a-1:hover{
 
-	background-color: brown;
+	background-color: #ffe433;
+	color: black;
+	border: black solid 3px;
+    cursor: pointer;
+	transition: all 1s;
+}
+
+.a-2:hover{
+	background-color: rgb(255, 93, 43);
+	color: black;
+	border: black solid 3px;
+    cursor: pointer;
+	transition: all 1s;
+}
+
+.a-3:hover{
+	background-color: rgb(98, 111, 232);
 	color: black;
 	border: black solid 3px;
     cursor: pointer;
@@ -188,26 +216,153 @@ nav ul li a:hover{
 }
 
 header{
-
     display: flex;
+	width: 100%;
+	left: 0;
+	right: 0;
+	padding: 7px;
     flex-direction: row;
-    background-color: black;
-    border: solid white 1px;
- 
+    background:linear-gradient(black, rgb(88, 88, 88));
+	color: white;
 }
 header hgroup{
     display: flex;
     flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 100%;
+	grid-template-areas: 
+	     "h-img h-title h-botton";
+}
+header hgroup div button{
+
+	width: 80%;
+	height: 50px;
+}
+
+ header div img{
+
+	width: 400px;
+	height: 150px;
+}
+
+.h-img{
+display: grid;
+grid-area: h-img;
+}
+.h-title{
+	display: grid;
+	grid-area: h-title;
+	text-align: center;
+}
+.h-botton{
+	display: grid;
+	grid-area: h-botton;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
 }
 header hgroup div{
     display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
 }
 
 footer{
 
+	
     background-color: black;
     color: white;
+	display: grid;
+	padding: 7px;
+	grid-template-rows: 100%;
+	grid-template-columns: 0.6fr 1fr 0.8fr;
+	grid-template-areas: 
+			"f-div1 f-div2 f-div3";
+			bottom: 0;
+}
+
+footer div{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer .f-div1{
+
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+footer .f-div2{
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+footer .f-div3{
+
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+footer div img{
+
+	width: 250px;
+	height: 70px;
+}
+
+.f-div1{
+
+	display: grid;
+	grid-area:f-div1 ;
+}
+
+.f-div2{
+
+	
+	display: grid;
+	grid-area:f-div2 ;
+	text-align: center;
+}
+
+.f-div3{
+
+	
+	display: grid;
+	grid-area:f-div3 ;
 }
 
 
 /*----------------DE AQUI PARA ABAJO PUEDEN HACER NUEVO CODIGO CSS PARA SUS ESTILOS PROPIOS--------------*/
+
+div{
+	width: 100%;
+	height: auto;
+}
+
+#font_face p{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	color: brown;
+}
+
+#color p{
+	font-size: medium;
+	color: blueviolet;
+}
+#font_size p{
+	font-size: large;
+	color:darkorange;
+}

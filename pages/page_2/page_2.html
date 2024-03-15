@@ -19,68 +19,71 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="shortcut icon" href="/img/favicon.gif" type="image/x-icon">
-    
+
     <!--TILE-->
     <title>MI PRIMERA WEB</title>
 </head>
 
-  <!--BODY-->
+<!--BODY-->
+
 <body>
-      <!--NAVBAR-->
-    <nav class="nav">
-        <ul>
-            <li>
-                <a href="/pages/page_1/page_1.html">pagina1</a>
-            </li>  
-            <li>
-                <a href="/pages/page_2/page_2.html">pagina2</a>
-            </li>
-            <li>
-                <a href="/pages/page_3/page_3.html">pagina3</a>
-            </li>
-            <li>
-                <button>INICIAR SECCION</button>
-            </li>
-            <li>
-                <button>REGISTRO</button>
-            </li>
 
-           
-        </ul>
 
-    </nav>
-
-     <!--HEADER-->
+    <!--HEADER-->
     <header class="header">
 
-        
+
         <hgroup>
-            <div>
-                <h2>aqui ira una imagen</h2>
+
+            <div class="h-img">
+                <img src="/img/header1.png" alt="">
             </div>
 
-        <div>aqio ira el titulo de header</div>
+            <div class="h-title">
+                <h1>PAGINA WEB DIANA</h1>
+            </div>
+            <div class="h-botton">
+                <button type="button" class="btn btn-warning">Iniciar seccion</button>
+
+                <button type="button" class="btn btn-primary">Registo</button>
+            </div>
+
+
 
         </hgroup>
     </header>
 
+    <!--NAVBAR-->
+    <nav class="nav">
+        <ul>
+            <li>
+                <a class="a-1" href="/index.html">RAMSES</a>
+            </li>
+            <li>
+                <a class="a-2" href="/pages/page_1/page_1.html">MIGUEL</a>
+            </li>
+            <li>
+                <a class="a-3" href="/pages/page_3/page_3.html">MARIANGELES</a>
+            </li>
+        </ul>
+    </nav>
 
-  <!--MAIN-->   
+    <!--MAIN-->
 
-    
+
     <main class="main">
 
-        <!---------------------------------INICIA LA SECCION 1---------------->   
-          <!------------------------------------------------------------------------------------------
+        <!---------------------------------INICIA LA SECCION 1---------------->
+        <!------------------------------------------------------------------------------------------
     ----------------------------APARTIR DE AQUI COMIENZA EL AREA DE TRABAJO----------------
---------------------------------------------------------------------------------------------------> 
+-------------------------------------------------------------------------------------------------->
         <!--SECTION1-->
 
 
         <section class="section1">
 
-             <!--articulo1-->
-              <!-- --TRABAJARAN DENTRO DE LOS ARTICLE, NOTA:----------------------
+            <!--articulo1-->
+            <!-- --TRABAJARAN DENTRO DE LOS ARTICLE, NOTA:----------------------
 
             --------1 PARA AÑADIR OTRO ARTICULO A LA SECCION SERA A CONTICUACION DEL CIERRE DE ETIQUETA
              DEL ARTICLE ANTERIOR DENTRO DE LA SECCION  Y MUY MUY MUY IMPORTAN AÑADIRLE AL ATRIBUTO (class="art2")
@@ -98,33 +101,159 @@
               ------5 PARA AGREGAR UNA IMAGEN DEBERAN GUARDARLA EN LA CARPETA "IMG" SINO LA LEE PODRAN GUARDAR EN CARPETA 
               DONDE ESTAN TRABAJANDO-->
 
+              <article class="art4">
+
+                <h1 class="TITULODIANA"> <ins> "LISTAS EN HTML" </ins>
+                </h1>
+              </article>
 
             <article class="art1">
-               
-                <h2>este es el articulo 1</h2>
+
                 
+
+
+                <div class="partedianatabla">
+
+
+                    <table
+                        style="background-color:#00ff00; border-style:groove; border-width:1px; border-color:blue; padding:30px; text-align:center"
+                        borde="1px" cellspacing="3px" cellpadding="6px">
+                        <tr style="border:double black">
+                            <th style="border:solid black" width="100px" height="50px"> CLASES </th>
+                            <th style="border:solid black" width="100px" height="50px"> DESCRIPCION </th>
+                            <th style="border:solid black" width="100px" height="50px"> TIPOS </th>
+
+
+                        </tr>
+                        <tr style="border:double black">
+
+                            <td style="border:solid black">Listas Ordenadas<br> OL <br></td>
+                            <td style="border:solid black">Son aquellas que se ordenan mediante numeración</td>
+                            <td style="border:solid black">1,a,A,i,I</td>
+
+                        </tr>
+                        <tr style="border:double black;">
+                            <td style="border:solid black">Listas Desordenadas<br> UL </br></td>
+                            <td style="border:solid black">Son aquellas que se ordenan mediante viñetas</td>
+                            <td style="border:solid black">disc,square,circle,none</td>
+
+
+                        </tr>
+
+                    </table>
+
+                </div>
+
             </article>
-
-
 
 
             <article class="art2">
+                <div class="partediana1">
+                    
 
-                <h2>este es el articulo 2</h2>
+                    En HTML, podemos crear una
+                            <ol>
+                                <li><span style="color:#00ff00">LISTA ORDENADA usando la etiqueta OL</span>.
+                                    <ul type="square">
+                                        <li>La etiqueta ol representa una lista ordenada. </li>
+                                        <li>Dentro de cada uno de los elementos de la lista ordenada inicio ol y final
+                                            ol,tenemos que definir los elementos de la lista.</li>
+                                        <li>Podemos definir los elementos de la lista usando la etiqueta li.</li>
+                                        <li>Dentro de una lista ordenada podemos crear más subniveles.</li>
+                                        <li> <img src="/img/foto_lista_ordenada.png" title="EJEMPLO LISTA ORDENADA"
+                                                style="border:solid orange" 40px>
+                                        </li>
+                                </li>
+                                </ul>
 
-                
+
+                                </li>
+                                <li><span style="color:#00ff00"> LISTA DESORDENADA usando la etiqueta UL</span>.
+                                    <ul type="disc">
+                                        <li>La etiqueta ul representa una lista desordenada. </li>
+                                        <li>Para representar los elementos de la lista desordenada utilizamos el mismo
+                                            elemento que con las listas ordenadas, es decir, el elemento li.</li>
+                                        <li>Dentro de una lista desordenada podemos crear más subniveles.</li>
+                                        <li> <img src="/img/foto_lista_desordenada.gif"
+                                                title="EJEMPLO LISTA DESORDENADA" style="border: solid orange" 10px>
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+                            </ol>
+                   
+                </div>
+
+                <div class="partediana1">
+                    <a href="https://www.freecodecamp.org/espanol/news/lista-html-como-usar-vinetas-listas-ordenadas-y-desordenadas/"
+                        target="_blank">LISTAS ORDENADAS Y DESORDENADAS</a>
+                    <p>Este tema lo puedes encontrar en la siguiente web a continuacion tienes el link:<a
+                            href="https://www.freecodecamp.org/espanol/news/lista-html-como-usar-vinetas-listas-ordenadas-y-desordenadas/"
+                            target="_blank"> pulsar aqui</a> </p>
+                </div>
+          
             </article>
+
+            <article class="art3">
+
+                <div class="partediana2">
+                    <p>VER VIDEO: EXPLICACION LISTAS ORDENADAS Y DESORDENADAS<br><br>
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/4gy9rY3ihJs?si=-9Tw_MUHRw125QfA"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                </div>
+               
+
+                <!--  FIN SECCION DIANA         -->
+
+
+
+            </article>
+
+
+
+
+
         </section>
-      
-       
+
+
     </main>
+    <!--FOOTER-->
     <!--FOOTER-->
     <footer class="footer">
 
-        <div>
-            <h1>
-                footer
-            </h1>
+        <div class="f-div1">
+            <h3>GRUPO</h3>
+            <ul>
+                <li><button type="button" class="btn btn-outline-info">MARIANGELES</button></li>
+                <li><button type="button" class="btn btn-outline-primary">DIANA</button></li>
+                <li><button type="button" class="btn btn-outline-danger">MIGUEL</button></li>
+                <li><button type="button" class="btn btn-outline-warning">RAMSES</button></li>
+            </ul>
+        </div>
+
+        <div class="f-div2">
+            <div>
+                <img src="/img/header1.png" alt="">
+            </div>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores excepturi quasi odit tenetur,
+                in laborum, consequatur atque laudantium fuga odio repellendus ab ratione expedita laboriosam quos
+                eligendi tempora quibusdam corporis!</p>
+
+        </div>
+
+        <div class="f-div3">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d859.7410066735398!2d-3.8737469455828104!3d40
+            .312495095242575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418dcefd1650f3%3A0xe07dbb80bda74d6!2sCalle%
+            20C%C3%A1mara%20de%20la%20Industria%2C%2016%2C%2028938%20M%C3%B3stoles%2C%20Madrid!5e1!3m2!1ses!2ses!4v171043594769
+            5!5m2!1ses!2ses" width="300" height="125" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
         </div>
     </footer>
 
@@ -138,4 +267,5 @@
     <!-- libreria JS sweetalert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
+
 </html>

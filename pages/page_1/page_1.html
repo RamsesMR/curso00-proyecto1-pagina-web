@@ -19,68 +19,72 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="shortcut icon" href="/img/favicon.gif" type="image/x-icon">
-    
+
     <!--TILE-->
     <title>MI PRIMERA WEB</title>
 </head>
 
-  <!--BODY-->
+<!--BODY-->
+
 <body>
-      <!--NAVBAR-->
-    <nav class="nav">
-        <ul>
-            <li>
-                <a href="/pages/page_1/page_1.html">pagina1</a>
-            </li>  
-            <li>
-                <a href="/pages/page_2/page_2.html">pagina2</a>
-            </li>
-            <li>
-                <a href="/pages/page_3/page_3.html">pagina3</a>
-            </li>
-            <li>
-                <button>INICIAR SECCION</button>
-            </li>
-            <li>
-                <button>REGISTRO</button>
-            </li>
 
-           
-        </ul>
 
-    </nav>
-
-     <!--HEADER-->
+    <!--HEADER-->
     <header class="header">
 
-        
+
         <hgroup>
-            <div>
-                <h2>aqui ira una imagen</h2>
+
+            <div class="h-img">
+                <img src="/img/header1.png" alt="">
             </div>
 
-        <div>aqio ira el titulo de header</div>
+            <div class="h-title">
+                <h1>PAGINA WEB MIGUEL</h1>
+            </div>
+            <div class="h-botton">
+                <button type="button" class="btn btn-warning">Iniciar seccion</button>
+
+                <button type="button" class="btn btn-primary">Registo</button>
+            </div>
+
+
 
         </hgroup>
     </header>
 
+    <!--NAVBAR-->
+    <nav class="nav">
+        <ul>
+            <li>
+                <a class="a-1" href="/index.html">RAMSES</a>
+            </li>
+            <li>
+                <a class="a-2" href="/pages/page_2/page_2.html">DIANA</a>
+            </li>
+            <li>
+                <a class="a-3" href="/pages/page_3/page_3.html">MARIANGELES</a>
+            </li>
+        </ul>
+    </nav>
 
-  <!--MAIN-->   
 
-    
+    <!--MAIN-->
+
+
     <main class="main">
 
-        <!---------------------------------INICIA LA SECCION 1---------------->   
-          <!------------------------------------------------------------------------------------------
+        <!---------------------------------INICIA LA SECCION 1---------------->
+        <!------------------------------------------------------------------------------------------
     ----------------------------APARTIR DE AQUI COMIENZA EL AREA DE TRABAJO----------------
---------------------------------------------------------------------------------------------------> 
+-------------------------------------------------------------------------------------------------->
         <!--SECTION1-->
 
 
         <section class="section1">
 
-             <!--articulo1-->
-              <!-- --TRABAJARAN DENTRO DE LOS ARTICLE, NOTA:----------------------
+            <!--articulo1-->
+            <!-- --TRABAJARAN DENTRO DE LOS ARTICLE, NOTA:----------------------
 
             --------1 PARA AÑADIR OTRO ARTICULO A LA SECCION SERA A CONTICUACION DEL CIERRE DE ETIQUETA
              DEL ARTICLE ANTERIOR DENTRO DE LA SECCION  Y MUY MUY MUY IMPORTAN AÑADIRLE AL ATRIBUTO (class="art2")
@@ -99,32 +103,88 @@
               DONDE ESTAN TRABAJANDO-->
 
 
-            <article class="art1">
-               
-                <h2>este es el articulo 1</h2>
-                
+            <article class="art1 contenedor">
+
+              
+                    <div class="izq_text">
+                        <p>HTML (Lenguaje de Marcas de Hipertexto, del inglés HyperText Markup Language) es el componente más básico
+                             de la Web. Define el significado y la estructura del contenido web. Además de HTML, generalmente se utilizan
+                              otras tecnologías para describir la apariencia/presentación de una página web (CSS) o la funcionalidad/comportamiento 
+                              (JavaScript).<br>
+                            <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">EXPLICACIÓN HTML</a>
+                        </p>
+                    </div>
+
+
+                   
+
+
+
+                    <div class="cen_img">
+                        <img src="/img/image_html.png" usemap="#image-map" alt="im_html" height="200" width="140">
+                        <map name="image-map">
+                            <area target="_blank" alt="html" title="html"
+                                href="https://developer.mozilla.org/es/docs/Web/HTML" coords="" shape="default">
+                        </map>
+                    </div>
+
+
             </article>
-
-
-
 
             <article class="art2">
-
-                <h2>este es el articulo 2</h2>
-
-                
+                <div class="der_video">
+                    <h5>VIDEO EJEMPLO</h5>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/rbuYtrNUxg4?si=3G9mpJ80nPI_KJ5K"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
             </article>
+
+            
+
+
+
         </section>
-      
-       
+
+
     </main>
+    <!--FOOTER-->
     <!--FOOTER-->
     <footer class="footer">
 
-        <div>
-            <h1>
-                footer
-            </h1>
+        <div class="f-div1">
+            <h3>GRUPO</h3>
+            <ul>
+                <li><button type="button" class="btn btn-outline-info">MARIANGELES</button></li>
+                <li><button type="button" class="btn btn-outline-primary">DIANA</button></li>
+                <li><button type="button" class="btn btn-outline-danger">MIGUEL</button></li>
+                <li><button type="button" class="btn btn-outline-warning">RAMSES</button></li>
+            </ul>
+        </div>
+
+        
+
+        <div class="f-div2">
+            <div>
+                <img src="/img/header1.png" alt="">
+            </div>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores excepturi quasi odit tenetur,
+                in laborum, consequatur atque laudantium fuga odio repellendus ab ratione expedita laboriosam quos
+                eligendi tempora quibusdam corporis!</p>
+
+        </div>
+
+        <div class="f-div3">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d859.7410066735398!2d-3.8737469455828104!3d40
+            .312495095242575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418dcefd1650f3%3A0xe07dbb80bda74d6!2sCalle%
+            20C%C3%A1mara%20de%20la%20Industria%2C%2016%2C%2028938%20M%C3%B3stoles%2C%20Madrid!5e1!3m2!1ses!2ses!4v171043594769
+            5!5m2!1ses!2ses" width="300" height="125" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
         </div>
     </footer>
 
@@ -138,4 +198,5 @@
     <!-- libreria JS sweetalert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
+
 </html>
