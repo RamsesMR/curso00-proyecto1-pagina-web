@@ -1,5 +1,3 @@
-console.log("hola soy el index");
-
 class Usuario {
     constructor(nombre, apellido, dni, correo, password, login) {
 
@@ -13,14 +11,14 @@ class Usuario {
 }
 const arrayUsuario = [];
 
-//variable usuario creada para almacenar get localstorage
+//variable usuario creada para almacenar get sessionstorage
 
 let usuario;
 
-//llamamos al Usuario en localStorage
-if(localStorage.getItem("Usuario") !== null){
+//llamamos al Usuario en sessionStorage
+if(sessionStorage.getItem("Usuario") !== null){
 
-    const usuarioJson = localStorage.getItem("Usuario");
+    const usuarioJson = sessionStorage.getItem("Usuario");
     
      usuario = JSON.parse(usuarioJson);
     
@@ -54,126 +52,6 @@ if(localStorage.getItem("Usuario") !== null){
         spanCorreo.appendChild(correo);
     
     
-    
-    
-    
-    
-    
-    
-    
-        div4.className = "dato-usuario";
-        div4.innerHTML = `
-    
-           <span id="nombre_usuario" class="text-span"></span>
-           <span id="apellido_usuario" class="text-span"></span>
-           <span id="dni_usuario" class="text-span"></span>
-          <span id="correo_usuario" class="text-span"></span>
-          `;
-    
-        contenedor4.appendChild(div4);
-    
-        /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        // DATOS FINANCIEROS 
-    
-    
-        //nodos para la creacion de datos financieros
-    
-    
-    
-        //iva
-        iva_usuario.innerText = usuario.totalIva + "$";
-    
-        const span_iva_usuario = document.getElementById("iva_usuario");
-    
-        span_iva_usuario.appendChild(iva_usuario);
-    
-    
-        //irpf
-        irpf_usuario.innerText = usuario.totalIrpf + "$";
-    
-        const span_irpf_usuario = document.getElementById("irpf_usuario");
-    
-        span_irpf_usuario.appendChild(irpf_usuario);
-    
-    
-        //total deduciones
-        totalBruto_usuario.innerText = usuario.totalIngresoBruto + "$";
-    
-        const span_totalBruto_usuario = document.getElementById("totalDeucciones_usuario");
-    
-        span_totalBruto_usuario.appendChild(totalBruto_usuario);
-    
-    
-        //total bruto
-        total_usuario.innerText = usuario.totalIngreso + "$";
-    
-        const span_total_usuario = document.getElementById("totalBruto_usuario");
-    
-        span_total_usuario.appendChild(total_usuario);
-    
-    
-        //gasto
-        gasto_usuario.innerText = usuario.gastos + "$";
-    
-        const span_gasto_usuario = document.getElementById("gasto_usuario");
-    
-        span_gasto_usuario.appendChild(gasto_usuario)
-    
-    
-    
-    
-    
-    
-    
-        div5.className = "dato-financiero";
-    
-        div5.innerHTML = `
-          
-          <span  id="iva_usuario" class="iva_usuario"></span>
-          <span id="irpf_usuario" class="irpf_usuario"></span>
-          <span id="totalBruto_usuario" class="totalBruto_usuario"></span>
-          <span id="totalDeucciones_usuario" class="totalDeucciones_usuario"></span>
-          <span id="gasto_usuario" class="gasto_usuario"></span>
-          
-          `;
-    
-          contenedor5.appendChild(div5);
-    
-        
-    
-        console.log(usuario.totalIva);
-        console.log(usuario.totalIrpf);
-        console.log(usuario.totalIngresoBruto);
-    
-    
-    
-        /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        // DATOS FINANCIEROS 
-    
-    
-    
-        factura_ingreso_usuario.innerText = usuario.facturasIngresos;
-        const span_factura_ingreso = document.getElementById("usuario_factura_ingreso");
-        span_factura_ingreso.appendChild(factura_ingreso_usuario)
-    
-    
-        factura_gasto_usuario.innerText= usuario.facturasGastos;
-        const span_factura_gasto = document.getElementById("usuario_factura_gasto");
-        span_factura_gasto.appendChild(factura_gasto_usuario);
-    
-        factura_personalizadas_usuario.innerText = usuario.facturasPersonalizadas;
-        const span_factura_personalizada = document.getElementById("usuario_factura_personalizada");
-        span_factura_personalizada.appendChild(factura_personalizadas_usuario);
-    
-        div6.className="dato-factura-visual";
-        div6.innerHTML=`
-        
-        <span id="usuario_factura_gasto" class="usuario_factura_gasto"></span>
-        <span id="usuario_factura_ingreso" class="usuario_factura_ingreso"></span>
-        <span id="usuario_factura_personalizada" class="usuario_factura_personalizada">
-        
-        `;
-    
     }else{
     
         console.log("no hay ningun usuario registrado");
@@ -181,24 +59,6 @@ if(localStorage.getItem("Usuario") !== null){
     
     
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -246,8 +106,9 @@ registroUsuario.addEventListener("click", () => {
             arrayUsuario.push(usuario);
 
             let usuarioJson = JSON.stringify(usuario);
+            Storage
 
-            localStorage.setItem("Usuario", usuarioJson);
+            sessionStorage.setItem("Usuario", usuarioJson);
 
             console.log(arrayUsuario);
             console.log(usuarioJson);
@@ -268,7 +129,7 @@ registroUsuario.addEventListener("click", () => {
 
 inicioUsuario.addEventListener("click", () => {
 
-    const usuarioJson = localStorage.getItem("Usuario");
+    const usuarioJson = sessionStorage.getItem("Usuario");
 
     const usuario = JSON.parse(usuarioJson);
 
@@ -301,7 +162,7 @@ inicioUsuario.addEventListener("click", () => {
 
                     let usuarioJson = JSON.stringify(usuario);
 
-                    localStorage.setItem("Usuario", usuarioJson);
+                    sessionStorage.setItem("Usuario", usuarioJson);
 
                     console.log(usuario)
                 }
@@ -333,7 +194,7 @@ inicioUsuario.addEventListener("click", () => {
                                         const usuario_login = document.getElementById("usuario-login").value;
                                         const password_login = document.getElementById("password-login").value;
 
-                                        const usuarioJson = localStorage.getItem("Usuario");
+                                        const usuarioJson = sessionStorage.getItem("Usuario");
 
                                         const usuario = JSON.parse(usuarioJson);
 
@@ -381,7 +242,7 @@ inicioUsuario.addEventListener("click", () => {
 
                 let usuarioJson = JSON.stringify(usuario);
 
-                localStorage.setItem("Usuario", usuarioJson);
+                sessionStorage.setItem("Usuario", usuarioJson);
                 console.log(usuario)
 
 
@@ -390,4 +251,142 @@ inicioUsuario.addEventListener("click", () => {
     }//else
 
 
-})
+});
+
+/////////////////////////////////////////////////////////////////////ELEMENTOS PARA JOKER
+const section=document.getElementById("section");
+const article=document.getElementById("article");
+const footer=document.getElementById("footer");
+const header=document.getElementById("header")
+const nav=document.getElementById("nav");
+const main=document.getElementById("main")
+const body=document.getElementById("body");
+const joker= document.getElementById("joker");
+const divJoker=document.getElementById("div-joker");
+
+console.log(joker);
+
+///////////////////////////////////////////7///////////////////////////////////////////////////////
+
+//aparece el joker
+
+setTimeout(()=>{
+
+
+    divJoker.style.display="flex";
+},5000)
+
+//NO TOCAR
+
+divJoker.addEventListener("click",()=>{
+//aqui ira la funcion OnJoker que contendra un nido de funciones
+console.log("dio click")
+
+
+offBody(2500);
+onBody(2700);
+offBody(2800);
+onBody(2900);
+offBody(3000);
+onBody(3100);
+offBody(3200);
+onBody(3400);
+offBody(3500);
+onBody(3600);
+offBody(3700);
+onBody(3800);
+
+
+
+
+offBody(3850);
+onBody(3900);
+offBody(3950);
+onBody(4000);
+offBody(4050);
+onBody(4100);
+offBody(4150);
+onBody(4200);
+offBody(4250);
+onBody(4300);
+offBody(4350);
+onBody(4500);
+offBody(4500);
+onBody(4525);
+offBody(4550);
+onBody(4575);
+offBody(4600);
+onBody(4625);
+offBody(4650);
+onBody(4675);
+offBody(4700);
+onBody(4725);
+offBody(4750);
+onBody(4775);
+offBody(5000);
+onBody(5025);
+offBody(5050);
+onBody(5075);
+offBody(5100);
+onBody(5110);
+offBody(5110);
+onBody(5120);
+offBody(5130);
+onBody(5140);
+offBody(5150);
+onBody(5160);
+offMain(5500);
+onMain(6000);
+offMain(6050);
+onMain(6100);
+offMain(60125);
+onMain(6150);
+offMain(6200);
+onMain(6250);
+
+
+
+
+
+});
+
+//   CEAREMOS TODAS LAS FUNCIONES INDIVIDUALES YA QUE NO NOS DEJA REPETIR UN BUCLE
+
+
+function onBody(time){
+
+    setTimeout(()=>{
+
+        body.style.display="grid";
+    },time);
+
+}
+
+function offBody(time){
+
+    setTimeout(()=>{
+
+        body.style.display="none";
+    },time);
+    
+}
+
+
+function offMain(time){
+
+    setTimeout(()=>{
+
+   main.style.display="none";
+   main.style.background="color:black"
+
+    },time);
+}
+
+function onMain(time){
+
+ setTimeout(()=>{
+
+    main.style.display="grid";
+
+ },time)
+}

@@ -139,6 +139,10 @@ article div img{
 .art7 {
 	display: grid;
 	grid-area: art7;
+	display: flex;
+	flex-direction: column ;
+	justify-content: center;
+	align-items: center;
 	
 } 
 
@@ -391,5 +395,20 @@ td{
 th{
 	background:linear-gradient(black,whitesmoke);
 }
+
+.div-joker{
+
+display: none;
+}
+.div-joker .button-joker{
+
+	float: right;
+	position: fixed;
+	right: 20px;
+	color: yellow;
+	font-style: bold;
+	
+}
+
 
 /*----------------DE AQUI PARA ABAJO PUEDEN HACER NUEVO CODIGO CSS PARA SUS ESTILOS PROPIOS--------------*/

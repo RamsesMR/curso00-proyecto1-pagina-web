@@ -26,11 +26,11 @@
 
 <!--BODY-->
 
-<body>
+<body id="body">
 
 
     <!--HEADER-->
-    <header class="header">
+    <header class="header" id="header">
 
 
         <hgroup>
@@ -43,9 +43,9 @@
                 <h1>PAGINA WEB MIGUEL</h1>
             </div>
             <div class="h-botton">
-                <button type="button" class="btn btn-warning">Iniciar seccion</button>
+                <button id="boton-inicio" type="button" class="btn btn-warning">Iniciar seccion</button>
 
-                <button type="button" class="btn btn-primary">Registo</button>
+                <button id="boton-registro" type="button" class="btn btn-primary">Registo</button>
             </div>
 
 
@@ -54,7 +54,7 @@
     </header>
 
     <!--NAVBAR-->
-    <nav class="nav">
+    <nav class="nav" id="nav">
         <ul>
             <li>
                 <a class="a-1" href="/index.html">RAMSES</a>
@@ -72,7 +72,7 @@
     <!--MAIN-->
 
 
-    <main class="main">
+    <main class="main" id="main">
 
         <!---------------------------------INICIA LA SECCION 1---------------->
         <!------------------------------------------------------------------------------------------
@@ -81,7 +81,7 @@
         <!--SECTION1-->
 
 
-        <section class="section1">
+        <section class="section1" id="section">
 
             <!--articulo1-->
             <!-- --TRABAJARAN DENTRO DE LOS ARTICLE, NOTA:----------------------
@@ -104,6 +104,7 @@
 
 
             <article class="art1 contenedor">
+                <div class="div-joker" id="div-joker"> <button id="joker" type="button" class="btn btn-dark button-joker">NO TOCAR</button></div>
 
               
                     <div class="izq_text">
@@ -142,6 +143,38 @@
                 </div>
             </article>
 
+            <article class="art3 contenedor">
+
+              
+                <div class="izq_text">
+                    <p>Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para describir la presentación de documentos HTML o XML (en-US) (incluyendo varios lenguajes basados en XML como SVG, MathML o XHTML). CSS describe cómo debe ser renderizado el elemento estructurado en la pantalla, en papel, en el habla o en otros medios.<br>
+                        <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">EXPLICACIÓN HTML</a>
+                    </p>
+                </div>
+
+
+               
+
+
+
+                <div class="cen_img">
+                    <img src="/img/CSS3_logo_and_wordmark.svg.png" usemap="#image-map" alt="im_html" height="200" width="140">
+                    <map name="image-map">
+                        <area target="_blank" alt="html" title="html"
+                            href="https://developer.mozilla.org/es/docs/Web/HTML" coords="" shape="default">
+                    </map>
+                </div>
+
+
+        </article>
+
+        <article class="art4">
+            <div class="der_video">
+                <h5>VIDEO EJEMPLO</h5>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/W6GTDfrWjXs?si=tihQHhnUNCnWzuZt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </article>
+
             
 
 
@@ -152,15 +185,15 @@
     </main>
     <!--FOOTER-->
     <!--FOOTER-->
-    <footer class="footer">
+    <footer class="footer" id="footer">
 
         <div class="f-div1">
             <h3>GRUPO</h3>
             <ul>
-                <li><button type="button" class="btn btn-outline-info">MARIANGELES</button></li>
-                <li><button type="button" class="btn btn-outline-primary">DIANA</button></li>
-                <li><button type="button" class="btn btn-outline-danger">MIGUEL</button></li>
-                <li><button type="button" class="btn btn-outline-warning">RAMSES</button></li>
+                <li>  <a class="a-1" href="/pages/page_3/page_3.html"><button type="button" class="btn btn-outline-info">MARIANGELES</button></a></li>
+                <li><a href="/pages/page_2/page_2.html"><button type="button" class="btn btn-outline-primary">DIANA</button></a></li>
+                <li><a href="/pages/page_1/page_1.html"><button type="button" class="btn btn-outline-danger">MIGUEL</button></a></li>
+                <li><a href="/index.html"></a><button type="button" class="btn btn-outline-warning">RAMSES</button></li>
             </ul>
         </div>
 

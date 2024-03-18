@@ -11,7 +11,7 @@ body{
 	margin: 0;
 	width: 100%;
 	height: 100%;
-	background-color: black;
+	background-color: rgb(45, 37, 37);
 	color: white;
 	display: grid;
 	grid-template-rows: 0.2fr 0.1fr 5.8fr 0.2fr;
@@ -33,20 +33,19 @@ main {
 	grid-template-rows: 100%;
 	grid-template-columns: 100%;
 	grid-template-areas:
-		"section1"
-
-		
+		"section1"	
 	;
 }
 
 section {
 	display: grid;
 	width: 100%;
-	height: auto;
-	grid-template-rows: 100%;
+	height: 100%;
+	grid-template-rows: 1fr 1fr;
 	grid-template-columns: 50% 50%;
 	grid-template-areas: 
 		"art1 art2"
+		"art3 art4"
 	;
 }
 
@@ -55,12 +54,12 @@ article{
 	width: 100%;
 	height: 100%;
 	padding: 0;
-	margin: 0
-	;
+	margin: 0;
     justify-content: center;
     text-align: center;
     align-items: center;
-    width: 100%;
+	background-color: whitesmoke;
+   
 }
 
 .art1 {
@@ -73,7 +72,7 @@ article{
 	display: grid;
 	grid-area: art2;
 }
-/*
+
 .art3 {
 	display: grid;
 	grid-area: art3;
@@ -83,7 +82,7 @@ article{
 	display: grid;
 	grid-area: art4;
 }
-
+/*
 .art5 {
 	display: grid;
 	grid-area: art5;
@@ -126,7 +125,7 @@ article{
 
 	display: grid;
 	grid-area: section1;
-	border-right: black 1px solid;
+	
 }
 /* .section2 {
 
@@ -344,7 +343,19 @@ footer div img{
 	display: grid;
 	grid-area:f-div3 ;
 }
+.div-joker{
 
+	display: none;
+	}
+	.div-joker .button-joker{
+	
+		float: right;
+		position: fixed;
+		right: 20px;
+		color: yellow;
+		font-style: bold;
+		
+	}
 
 /*----------------DE AQUI PARA ABAJO PUEDEN HACER NUEVO CODIGO CSS PARA SUS ESTILOS PROPIOS--------------*/
 

@@ -26,11 +26,11 @@
 
 <!--BODY-->
 
-<body>
+<body id="body">
 
 
     <!--HEADER-->
-    <header class="header">
+    <header class="header" id="header">
 
 
         <hgroup>
@@ -43,9 +43,9 @@
                 <h1>PAGINA WEB DIANA</h1>
             </div>
             <div class="h-botton">
-                <button type="button" class="btn btn-warning">Iniciar seccion</button>
+                <button id="boton-inicio" type="button" class="btn btn-warning">Iniciar seccion</button>
 
-                <button type="button" class="btn btn-primary">Registo</button>
+                <button id="boton-registro" type="button" class="btn btn-primary">Registo</button>
             </div>
 
 
@@ -54,7 +54,7 @@
     </header>
 
     <!--NAVBAR-->
-    <nav class="nav">
+    <nav class="nav" id="nav">
         <ul>
             <li>
                 <a class="a-1" href="/index.html">RAMSES</a>
@@ -71,7 +71,7 @@
     <!--MAIN-->
 
 
-    <main class="main">
+    <main class="main" id="main">
 
         <!---------------------------------INICIA LA SECCION 1---------------->
         <!------------------------------------------------------------------------------------------
@@ -80,7 +80,7 @@
         <!--SECTION1-->
 
 
-        <section class="section1">
+        <section class="section1" id="section">
 
             <!--articulo1-->
             <!-- --TRABAJARAN DENTRO DE LOS ARTICLE, NOTA:----------------------
@@ -100,138 +100,338 @@
 
               ------5 PARA AGREGAR UNA IMAGEN DEBERAN GUARDARLA EN LA CARPETA "IMG" SINO LA LEE PODRAN GUARDAR EN CARPETA 
               DONDE ESTAN TRABAJANDO-->
+              
+              <!--AQUI COMIENZA PARTE DIANA-->
+<!-- <article class="art1">
 
-              <article class="art4">
+        <div class="comienzo">  
+            <i><h1><br>PAGINA WEB DIANA ELIZABETH LIGER SUAREZ<br></h1>
+              En esta página web explicaré dos temas los cuales son la <ins>creación de listas y enlaces en html</ins>. 
+              En esta he utilizado bloques, tablas,listas ordenadas, listas desordenadas, css, enlaces internos, 
+              enlaces externos, inserción de imagenes a la cual he puesto bordes,he utilizado la etiqueta title, 
+              he insertado un video,he puesto fondo de color a mi página.
+            </i>
+                
+        </div>
+</article>     -->
 
-                <h1 class="TITULODIANA"> <ins> "LISTAS EN HTML" </ins>
-                </h1>
-              </article>
 
-            <article class="art1">
 
+<article class="art2">
+    <div class="div-joker" id="div-joker"> <button id="joker" type="button" class="btn btn-dark button-joker">NO TOCAR</button></div>
+
+
+        <div class="parteira">
+             <ol>
+                <li>
+                    <a href="#destino_crear_listas"> ir a TEMA CREAR LISTAS </a>
+                        <ol type="a"> 
+                            <li>
+                                <a href="#destino_tabla"> ir a tabla </a>
+                            </li>
+                            <li>
+                                <a href="#destino_video_explicativo">ir a Video  </a>
+                            </li>
+                            <li>
+                                <a href="#destino_explicación">ir a Tipos de Listas </a>
+                            </li>
+                            <li>
+                                <a href="#destino_links">ir a Links de listas</a>
+                            </li>
+                        </ol>
+                </li>
+                <li>
+                    <a href="#destino_enlaces"> IR A TEMA ENLACES </a>
+                        <ol type="a">
+                            <li>
+                                <a href="#destino_¿Qué son los enlaces en HTML?"> ir a ¿Qué son los enlaces en HTML?</a>
+                            </li>
+                            <li>
+                                <a href="#destino_destino_enlaces_HTML"> ir a Destinos de enlaces en HTML</a>
+                            </li> 
+                            <li>
+                                <a href="#destino_títulos_enlaces"> ir a Títulos de enlaces</a>
+                            </li> 
+                            <li>
+                                <a href="#destino_video_enlaces"> ir a Video </a>
+                            </li> 
+                            <li>
+                                <a href="#destino_links_enlaces">ir a Links de enlaces </a>
+                            </li>
+
+                        </ol>
+                </li>
+            </ol>
+        </div>
+
+</article>        
+
+
+<article class="art3">
+        <div class="parteira">
+            <a name="destino_crear_listas"> ESTE ES EL TEMA CREAR LISTAS  </a>  
+    
+            <!--AQUI PONGO MI TITULO PRINCIPAL LLAMANDO  AL CONTENEDOR DE CSS CON NOMBRE TITULODIANA -->
+            <div class="TITULODIANA"> <br><i>"C&nbspR&nbspE&nbspA&nbspR&nbsp&nbsp L&nbspI&nbspS&nbspT&nbspA&nbspS&nbsp&nbsp E&nbspN&nbsp&nbsp H&nbspT&nbspM&nbspL" </i>
+            </div>
+              <!--</article>-->
+        </div>
+
+        <div class="parteira">
+        <a name="destino_tabla"> Tabla</a>
+        </div>
+            <!--<article class="art1">-->
+            <!--AQUI COMIENZO HACER EL SEGUNDO BLOQUE USANDO DIV Y LLAMANDO AL CONTENEDOR DE CSS LLAMADO 
+                PARTEDIANATABLA-->
+            <i>    <div class="partedianatabla">
                 
 
-
-                <div class="partedianatabla">
-
-
+            <!--COMIENZO HACER LA TABLA DE LISTAS EN HTML,PONIENDOLE UN FONDO DE COLOR VERDE LIMA,BORDE DE ESTILO
+            DOBLE,COLOR NEGRO
+            esta tabla consta de 3filas y 3 columnas-->        
                     <table
-                        style="background-color:#00ff00; border-style:groove; border-width:1px; border-color:blue; padding:30px; text-align:center"
-                        borde="1px" cellspacing="3px" cellpadding="6px">
+                        style="background-color:#00ff00; border-style:double; border-width:2px; border-color:black; padding:2px; text-align:center"
+                        borde="2px" cellspacing="2px" cellpadding="2px">
+                        <!--empiezo por crear la primera fila con sus respectivas celdas-->
                         <tr style="border:double black">
-                            <th style="border:solid black" width="100px" height="50px"> CLASES </th>
-                            <th style="border:solid black" width="100px" height="50px"> DESCRIPCION </th>
-                            <th style="border:solid black" width="100px" height="50px"> TIPOS </th>
-
-
+                            <th style="border:double black" width="100px" height="50px"> CLASES </th>
+                            <th style="border:double black" width="100px" height="50px"> DESCRIPCION </th>
+                            <th style="border:double black" width="100px" height="50px"> TIPOS </th>
                         </tr>
+                        <!--segunda fila con sus respectivas celdas-->
                         <tr style="border:double black">
-
-                            <td style="border:solid black">Listas Ordenadas<br> OL <br></td>
-                            <td style="border:solid black">Son aquellas que se ordenan mediante numeración</td>
-                            <td style="border:solid black">1,a,A,i,I</td>
-
+                            <td style="border:double black">Listas Ordenadas<br> OL <br></td>
+                            <td style="border:double black">Son aquellas que se ordenan mediante numeración</td>
+                            <td style="border:double black">1,a,A,i,I</td>
                         </tr>
-                        <tr style="border:double black;">
-                            <td style="border:solid black">Listas Desordenadas<br> UL </br></td>
-                            <td style="border:solid black">Son aquellas que se ordenan mediante viñetas</td>
-                            <td style="border:solid black">disc,square,circle,none</td>
-
-
+                        <!--tercera fila con sus respectivas celdas-->
+                        <tr style="border:double black">
+                            <td style="border:double black">Listas Desordenadas<br> UL </br></td>
+                            <td style="border:double black">Son aquellas que se ordenan mediante viñetas</td>
+                            <td style="border:double black">disc,square,circle,none</td>
                         </tr>
+                    </table> <!--cierro la tabla-->
+                </i>
+                </div> <!--cierro este bloque de div llammado partedianatabla-->
 
-                    </table>
+</article>
 
-                </div>
+<article class="art4">
+            <div class="parteira">
+                <a name="destino_video_explicativo"> VIDEO EXPLICACION</a>
+            </div>    
 
-            </article>
+            <i><div class="partevideo">VIDEO EXPLICACION <br>
+                <!--Aqui he usado la etiqueta iframe de un video de youtube se verá en la misma página-->
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/4gy9rY3ihJs?si=-9Tw_MUHRw125QfA"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div> <!--cierro este bloque de div llammado partediana2-->
+    </i> 
 
+</article>
 
-            <article class="art2">
-                <div class="partediana1">
-                    
+<article class="art5">
+                
+                    <div class="parteira">
+                        <a name="destino_explicación"> TIPOS DE LISTAS </a>
+                    </div>   
+                <!--Segundo bloque el cual consiste en hacer una lista comenzando con una lista ordenada de dos partes 
+                y cada parte de unas listas desordeanadas con viñetas -->
+                
+                <i><div class="partexplicacion">   
 
                     En HTML, podemos crear una
-                            <ol>
-                                <li><span style="color:#00ff00">LISTA ORDENADA usando la etiqueta OL</span>.
-                                    <ul type="square">
+                            <ol> <!--lista ordenada-->
+                                <li><span style="color:#00ff00">LISTA ORDENADA usando la etiqueta OL</span>. <!--primera lista numerica-->
+                                     <ul type="square"> <!--lista desordenada con viñeta cuadrado-->
                                         <li>La etiqueta ol representa una lista ordenada. </li>
-                                        <li>Dentro de cada uno de los elementos de la lista ordenada inicio ol y final
+                                        <li>Dentro de cada uno de los elementos de la lista <br>ordenada inicio ol y final
                                             ol,tenemos que definir los elementos de la lista.</li>
                                         <li>Podemos definir los elementos de la lista usando la etiqueta li.</li>
                                         <li>Dentro de una lista ordenada podemos crear más subniveles.</li>
-                                        <li> <img src="/img/foto_lista_ordenada.png" title="EJEMPLO LISTA ORDENADA"
-                                                style="border:solid orange" 40px>
-                                        </li>
-                                </li>
-                                </ul>
-
-
-                                </li>
-                                <li><span style="color:#00ff00"> LISTA DESORDENADA usando la etiqueta UL</span>.
-                                    <ul type="disc">
+                                        <li> <img src="/img/foto_lista_ordenada.png" alt= "no aparece imagen" title="EJEMPLO LISTA ORDENADA"
+                                                style="border:solid pink" 40px> <!--aqui incrusté una imagen y a la 
+                                                    cual le puse un title y un estilo con borde solido naranja-->
+                                        </li>                              
+                                    </ul> <!--cierre de la lista desordenada--> 
+                                </li> <!--cierre de la primera lista ordenada--> 
+                                <li><span style="color:#00ff00"> LISTA DESORDENADA usando la etiqueta UL</span>. <!--segunda lista numerica-->
+                                    <ul type="disc"> <!--lista desordenada con viñeta disco-->
                                         <li>La etiqueta ul representa una lista desordenada. </li>
-                                        <li>Para representar los elementos de la lista desordenada utilizamos el mismo
+                                        <li>Para representar los elementos de la lista desordenada<br> utilizamos el mismo
                                             elemento que con las listas ordenadas, es decir, el elemento li.</li>
                                         <li>Dentro de una lista desordenada podemos crear más subniveles.</li>
                                         <li> <img src="/img/foto_lista_desordenada.gif"
-                                                title="EJEMPLO LISTA DESORDENADA" style="border: solid orange" 10px>
-                                        </li>
+                                                title="EJEMPLO LISTA DESORDENADA" style="border: solid pink" 10px>
+                                                <!--aqui incrusté una imagen y a la 
+                                                    cual le puse un title y un estilo con borde solido naranja-->
+                                        </li> 
+                                    </ul> <!--cierre de lista desordenada--> 
+                                </li><!--cierre de la segunda lista ordenada-->
 
-                                    </ul>
-                                </li>
-
-                            </ol>
-                   
+                            </ol> <!--cierre lista ordenada-->
+                </i>
                 </div>
+</article>
+                      
+<article class="art6">
 
-                <div class="partediana1">
-                    <a href="https://www.freecodecamp.org/espanol/news/lista-html-como-usar-vinetas-listas-ordenadas-y-desordenadas/"
-                        target="_blank">LISTAS ORDENADAS Y DESORDENADAS</a>
-                    <p>Este tema lo puedes encontrar en la siguiente web a continuacion tienes el link:<a
-                            href="https://www.freecodecamp.org/espanol/news/lista-html-como-usar-vinetas-listas-ordenadas-y-desordenadas/"
-                            target="_blank"> pulsar aqui</a> </p>
-                </div>
-          
-            </article>
+    <div class="parteira">
+        <a name="destino_links"> Aqui puedes encontrar los links para más información  </a>  
+    </div>    
 
-            <article class="art3">
-
-                <div class="partediana2">
-                    <p>VER VIDEO: EXPLICACION LISTAS ORDENADAS Y DESORDENADAS<br><br>
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/4gy9rY3ihJs?si=-9Tw_MUHRw125QfA"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                </div>
-               
-
-                <!--  FIN SECCION DIANA         -->
-
-
-
-            </article>
+                        <!--aqui he creado un enlace EXTERNO con un titulo llamado LISTAS ORDENADAS Y DESORDENADAS en 
+                        el cual he usado el atributo TARGET_BLANK para q cuando pulse ahi
+                        se me abra la página web en otra ventana del navegador-->
+                        <div class="plink">LINK:<br>
+                            <a href="https://www.freecodecamp.org/espanol/news/lista-html-como-usar-vinetas-listas-ordenadas-y-desordenadas/"
+                            target="_blank">MANUAL DE LISTAS EN HTML</a>
+                         </div>   
+                            <!--aqui he creado un enlace en el cual he usado el atributo TARGET_BLANK para q cuando pulse ahi
+                        se me abra la pagina web en otra ventana del navegador-->
+                            <div class="plink">Este tema lo puedes encontrar en la siguiente web a continuacion tienes el link:<a
+                                href="https://www.freecodecamp.org/espanol/news/lista-html-como-usar-vinetas-listas-ordenadas-y-desordenadas/"
+                                target="_blank"> pulsar aqui</a> 
+                            </div>
+                              
+                </div> <!--cierro este bloque de div llammado partediana1-->
+</article>            
 
 
+<article class="art7">
+        <br><br>
+        <div class="parteira">
+                <a name="destino_enlaces">  ESTE ES EL TEMA ENLACES  </a>
+        </div>
+
+        <div class="TITULODIANA"> <br><i>"E&nbspN&nbspL&nbspA&nbspC&nbspE&nbspS&nbsp&nbspE&nbspN&nbsp&nbsp H&nbspT&nbspM&nbspL" </i>
+        </div>
+
+        <div class="parteira">
+            <a name="destino_¿Qué son los enlaces en HTML?"> ¿Qué son los enlaces en HTML?</a>
+            </div>
+
+        <i><div class="partexplicacionenlaces">
+                <br><br><b>¿QUE SON LOS ENLACES EN HTML?</b><br>
+                Lo más importante de los documentos HTML son los enlaces. Ya que mediante los enlaces en HTML podemos comunicar una página con otra. De esta forma, enlazando documentos HTML podemos acabar tejiendo lo que es Internet.            
+                Para crear un enlace en HTML utilizamos el elemento A con la siguiente sintaxis:
+                <a>Contenido del enlace</a>
+                Pero solo con esto el enlace no tendrá mucha utilidad ya que el principal objetivo del enlace es enlazar a un destino. Para poder indicar el destino de un enlace utilizamos el atributo href. En valor del atributo href 
+                puede ser cualquier URI que represente un recurso. Es decir, una página, una parte de una página,
+                una URL genérica, un archivo.<br><br>            
+           </div> 
+        </i>
+</article>
+
+<article class="art8">
+
+
+        </div>
+        <div class="parteira">
+        <a name="destino_destino_enlaces_HTML"> Destino de Enlaces en HTML</a>
+        </div>
+
+        <i> <div class="partexplicacionenlaces">
+                <br><br><b>DESTINO DE ENLACES</b><br>
+                Pero, ¿dónde se abre el enlace? Pues por defecto y si no hemos configurado nada en el navegador web que estemos< utilizando el enlace se abre en la misma ventana en la que tengamos el enlace.
+                Si bien, en el enlace, podemos indicar el destino que queremos darle a dicho enlace. 
+                Eso lo podemos hacer mediante el atributo target. Los posibles valores que admite el atributo target son:<br>
+                <b>_blank</b>, el agente de usuario intentará abrir el enlace en una nueva ventana. La nueva ventana no tendrá
+                 nombre.<br>
+                <b>_self</b>, el agente de usuario intentará abrir el enlace en el mismo marco donde está en código actual.<br>
+                <b>_parent</b>, el agente de usuario intentará abrir el enlace en el frameset inmediatamente superior al que se
+                 encuentra la página. Esto suele suceder cuando tenemos el enlace en un área de frames.<br>
+                <b>_top</b>, el agente de usuario intentará abrir el enlace en la ventana padre. En el caso de que
+                 exista un frameset lo eliminará y se hará con toda la ventana.
+                nombre_marco, se podrá indicar el nombre de un frame. En este caso el agente de usuario intentará 
+                abrir el enlace en el frame que coincida con el nombre. En el caso de no existir un frame con ese 
+                nombre lo abrirá en una nueva ventana, asignándole dicho nombre.<br><br>
+            </div>
+        </i>
+</article>
+
+
+<article class="art9">
+        <div class="parteira">
+            <a name="destino_títulos_enlaces"> Títulos de los Enlaces</a>
+            </div>
+        <i> <div class="partexplicacionenlaces">
+                <br><br><b>TITULO DE ENLACES</b><br>
+                El enlace en HTML, tal y como lo hemos visto hasta ahora, sirve para enlazar contra un recurso de la web: 
+                servidor, directorio, dominio,… Y lo que en mayor o menor medida describe lo que enlazamos es el contenido 
+                que encontramos entre las etiquetas A.
+                Si bien el elemento A nos ofrece un atributo llamado title. En el atributo title podemos describir de una 
+                forma textual el destino del enlace. Esto servirá no solo al usuario para que pueda obtener más información 
+                de dónde va, si no a las máquinas a la hora de asignar un nombre a la URI sobre la que estamos enlazando.<br><br>
+            </div>
+        </i>
+
+</article>
+
+<article class="art10">
+        <div class="parteira">
+            <a name="destino_video_enlaces"> Video explicación</a>
+        </div>    
+
+        <i><div class="partevideo">VIDEO EXPLICACION
+            <br>
+            <!--Aqui he usado la etiqueta iframe de un video de youtube se verá en la misma página-->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/d7t6mbfCS9E?si=KH6C0VoJZmYI8zWe"
+             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+             encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div> <!--cierro este bloque de div llammado partediana2-->
+        </i> 
+</article>
+
+
+<article class="art11">
+
+    <div class="parteira">
+        <a name="destino_links_enlaces"> Aqui puedes encontrar los links para más información  </a>  
+    </div>    
+        <div class="plink">LINK:<br>
+            <a href="https://www.manualweb.net/html/enlaces-html/" target="_blank">MANUAL ENLACES</a>
+         </div>   
+            <!--aqui he creado un enlace en el cual he usado el atributo TARGET_BLANK para q cuando pulse ahi
+        se me abra la pagina web en otra ventana del navegador-->
+            <div class="plink">Este tema lo puedes encontrar en la siguiente web a continuacion tienes el link:
+                <a href="https://www.manualweb.net/html/enlaces-html/" target="_blank"> pulsar aqui</a> 
+            </div>
+</article>
+
+
+            <!--cierre de otro bloque utilizando el css-->
+
+        
+
+<!--  FIN SECCION DIANA         -->
 
 
 
+            <!--</article>-->
+
+
+
+
+        
         </section>
 
 
     </main>
     <!--FOOTER-->
     <!--FOOTER-->
-    <footer class="footer">
+    <footer class="footer" id="footer">
 
         <div class="f-div1">
             <h3>GRUPO</h3>
             <ul>
-                <li><button type="button" class="btn btn-outline-info">MARIANGELES</button></li>
-                <li><button type="button" class="btn btn-outline-primary">DIANA</button></li>
-                <li><button type="button" class="btn btn-outline-danger">MIGUEL</button></li>
-                <li><button type="button" class="btn btn-outline-warning">RAMSES</button></li>
+                <li>  <a class="a-1" href="/pages/page_3/page_3.html"><button type="button" class="btn btn-outline-info">MARIANGELES</button></a></li>
+                <li><a href="/pages/page_2/page_2.html"><button type="button" class="btn btn-outline-primary">DIANA</button></a></li>
+                <li><a href="/pages/page_1/page_1.html"><button type="button" class="btn btn-outline-danger">MIGUEL</button></a></li>
+                <li><a href="/index.html"></a><button type="button" class="btn btn-outline-warning">RAMSES</button></li>
             </ul>
         </div>
 

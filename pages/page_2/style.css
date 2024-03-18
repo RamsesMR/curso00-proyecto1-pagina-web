@@ -14,7 +14,7 @@ body{
 	background-color: black;
 	color: white;
 	display: grid;
-	grid-template-rows: 0.2fr 0.1fr 10fr 0.2fr;
+	grid-template-rows: 0.2fr 0.1fr 15fr 0.2fr;
 	grid-template-columns: 100%;
 	grid-template-areas: 
 		"header"
@@ -40,14 +40,23 @@ main {
 
 section {
 	display: grid;
-	height: auto;
-	grid-template-rows: 0.1fr 1fr 1fr;
+	width: 100%;
+	height: 100%;
+	margin: 7px;
+	grid-template-rows: 0.1fr 0.7r 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-template-columns: 100%;
 	grid-template-areas: 
-		"art4" 
-		"art1"
-		"art3"
+		"art1" 
 		"art2"
+		"art3"
+		"art4"
+		"art5"
+		"art6"
+		"art7"
+		"art8"
+		"art9"
+		"art10"
+		"art11"
 	;
 }
 
@@ -93,12 +102,12 @@ article{
 	grid-area: art3;
 }
 
- .art4 {
+.art4 {
 	
 	display: grid;
 	grid-area: art4;
 }
-/*
+
 .art5 {
 	display: grid;
 	grid-area: art5;
@@ -112,7 +121,26 @@ article{
 .art7 {
 	display: grid;
 	grid-area: art7;
-} */
+} 
+
+.art8 {
+	display: grid;
+	grid-area: art8;
+} 
+.art9 {
+	display: grid;
+	grid-area: art9;
+} 
+
+.art10 {
+	display: grid;
+	grid-area: art10;
+} 
+
+.art11 {
+	display: grid;
+	grid-area: art11;
+} 
 
 .nav{
     display: grid;
@@ -136,6 +164,7 @@ article{
 }
 .section1 {
 
+	
 	display: grid;
 	grid-area: section1;
 	border-right: black 1px solid;
@@ -355,6 +384,19 @@ footer div img{
 	display: grid;
 	grid-area:f-div3 ;
 }
+.div-joker{
+
+	display: none;
+	}
+	.div-joker .button-joker{
+	
+		float: right;
+		position: fixed;
+		right: 20px;
+		color: yellow;
+		font-style: bold;
+		
+	}
 
 /*----------------DE AQUI PARA ABAJO PUEDEN HACER NUEVO CODIGO CSS PARA SUS ESTILOS PROPIOS--------------*/
 
@@ -366,33 +408,82 @@ main {
 	background-size: cover;
 	background-attachment:fixed;
 	position: relative;
-	background-image:linear-gradient(red-yellow);
+	background-image:gradient(red-yellow);
+}
+.comienzo {
+	font-family: "time new roman";
+	font-size: 40px;
+	color:pink;
+	text-align:center;	
 }
 
-
 .TITULODIANA {	
-	font-family: "time new roman";
+   font-family: "time new roman";
    font-size: 80px;
    text-align: center;
-   color: #00ff00; 
+   color: pink; 
 } 
 
 .partedianatabla {
 	font-family: "time new roman";
-	font-size: 30px;
+	font-size: 40px;
 	color: #000000; 
 	text-align:center;
+	border: solid pink 5px;
+	width: 69%;
+	left:100%;
+	right:100%;
 }
-.partediana1 {
+
+.partexplicacion {
 	font-family: "time new roman";
 	font-size: 30px;
 	color:#000000;
 	text-align:left;
+	border: solid pink 5px;
+	width:100%;
+	left:100%;
+	right:100%;
 }
 
-.partediana2 {
+.partevideo {
+
 	font-family: "time new roman";
-	font-size: 30px;
+	font-size: 40px;
 	color: #00ff00; 
 	text-align:center;
+	border: solid pink 5px;
+	width:100%;
+	left:100%;
+	right:100%;
+
 }
+
+.parteira {
+	font-family: "time new roman";
+	font-size: 40px;
+	color:blue;
+	text-align:left;
+	
+}
+
+.plink {
+	font-family: "time new roman";
+	font-size: 40px;
+	color:#000000;
+	text-align:left;
+	
+}
+
+.partexplicacionenlaces {
+	font-family: "time new roman";
+	font-size: 30px;
+	color:#000000;
+	text-align:justify;
+	border: solid pink 5px;
+	width:100%;
+	left:100%;
+	right:100%;
+}
+
+/*FIN PARTE DIANA*/
