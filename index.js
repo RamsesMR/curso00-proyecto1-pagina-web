@@ -280,21 +280,34 @@ setTimeout(()=>{
 
 divJoker.addEventListener("click",()=>{
 //aqui ira la funcion OnJoker que contendra un nido de funciones
-console.log("dio click")
+console.log("dio click");
+
+intOnBody();
+
+intMain()
 
 
 offBody(2500);
 onBody(2700);
+offHeader(2725);
+onHeader(2750);
 offBody(2800);
 onBody(2900);
+offHeader(2725);
+onHeader(2750);
 offBody(3000);
 onBody(3100);
+offHeader(2725);
+onHeader(2750);
 offBody(3200);
 onBody(3400);
 offBody(3500);
 onBody(3600);
 offBody(3700);
 onBody(3800);
+offHeader(3810);
+onHeader(3825);
+
 
 
 
@@ -345,13 +358,73 @@ offMain(6200);
 onMain(6250);
 
 
+offHeader(6300);
+onHeader(6400);
+offHeader(6500);
+onHeader(6600);
+
+offHeader(6700);
+onHeader(6800);
+offHeader(6900);
+onHeader(7000);
+
+offHeader(7050);
+onHeader(7150);
+offHeader(7250);
+onHeader(7350);
+
+offHeader(7400);
+onHeader(7500);
+offHeader(7600);
+onHeader(7700);
+
+offHeader(7800);
+onHeader(7900);
+offHeader(8000);
+onHeader(8300);
 
 
+offNav(8300);
+onNav(8400);
 
+offNav(8400);
+onNav(8500);
+
+offNav(8600);
+offHeader(8700);
+onHeader(8800);
+onNav(8900);
+
+offNav(9000);
+onNav(9050);
+
+offNav(9100);
+onNav(9150);
+
+offHeader(9200)
+offNav(9300)
+offMain(9400)
+
+onHeader(9600)
+onNav(9650)
+onMain(9700)
 });
 
 //   CEAREMOS TODAS LAS FUNCIONES INDIVIDUALES YA QUE NO NOS DEJA REPETIR UN BUCLE
 
+
+
+
+//apaga y prende la pantalla
+function intOnBody(){
+
+    setInterval(()=>{
+
+        offBody(1000);
+        onBody(1100);
+    },1200);
+
+}
 
 function onBody(time){
 
@@ -362,6 +435,7 @@ function onBody(time){
 
 }
 
+
 function offBody(time){
 
     setTimeout(()=>{
@@ -371,13 +445,43 @@ function offBody(time){
     
 }
 
+//////////////////////////////////////////
+
+
+//apaga y prende el main
+
+function intMain(){
+
+    setInterval(()=>{
+
+        offMain(900);
+        onMain(1050);
+        mainBlack(1100);
+
+
+    },1200);
+}
+
+
+function mainBlack(time){
+
+    setTimeout(()=>{
+
+        article.style.background="black";
+        article.style.color="red";
+
+    },time);
+}
+
+
 
 function offMain(time){
+
 
     setTimeout(()=>{
 
    main.style.display="none";
-   main.style.background="color:black"
+   
 
     },time);
 }
@@ -386,7 +490,47 @@ function onMain(time){
 
  setTimeout(()=>{
 
+ 
     main.style.display="grid";
+    article.style.background="white";
+    article.style.color="black";
 
  },time)
 }
+
+function offNav(time){
+
+    setTimeout(()=>{
+
+        nav.style.display="none";
+
+    },time);
+} 
+
+function onNav(time){
+
+    setTimeout(()=>{
+
+        nav.style.display="grid";
+
+    },time);
+}
+
+function offHeader(time){
+
+    setTimeout(()=>{
+
+        header.style.display="none";
+
+    },time);
+} 
+
+function onHeader(time){
+
+    setTimeout(()=>{
+
+        header.style.display="grid";
+
+    },time);
+} 
+
